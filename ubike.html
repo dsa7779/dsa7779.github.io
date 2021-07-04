@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>ERIC LIN</title>
+    <link rel=icon href=images/favicon.png sizes="16x16" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-lg nav">
+        <a href="index.html" class="nav-link" role="button">回首頁</a>
+        <a class="navbar-brand" href="#">ERIC LIN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">設計作品</a>
+            <a href="about.html" class="nav-link" role="button">關於我</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---封面圖-->
+    <div class="container-lg project">
+      <div class="wrapper">
+        <div class="project-cover-2"></div>
+      </div>
+      <h1>Ubike App Redesign</h1>
+    </div>
+    <div class="container-lg project">
+      <div class="overview">
+        <div class="overview-item">
+          <div class="title-s">專案時長</div>
+          <p>2020.5-6（一個月）</p>
+        </div>
+        <div class="overview-item">
+          <div class="title-s">專案類型</div>
+          <p>個人 Redesign 練習</p>
+        </div>
+        <div class="overview-item">
+          <div class="title-s">應用能力</div>
+          <p>二手資料分析、產品分析、介面設計</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg text">
+      <div class="title">
+        <h2>專案背景</h2>
+      </div>
+      <div class="content">
+        <p>
+          Ubike App
+          結合實體站點提供了「站點資訊」、「會員中心」等服務，期望讓民眾更舒適享受騎乘
+          Ubike 的流程及樂趣。<br />
+
+          不過實際上在 App 的體驗存在一些能夠改善的空間，這次 redesign
+          希望可以透過使用者分析和產品分析發現問題，針對站點頁面做出優化設計。
+        </p>
+        <img class="img" src="img/ubike_background.png " />
+        <div class="img-description">
+          Youbike 官方網站截圖
+        </div>
+      </div>
+    </div>
+    <div class="container-lg text">
+      <div class="title">
+        <h2>使用者分析</h2>
+      </div>
+      <div class="content">
+        <p>
+          首先根據台北市政府 106 年公共自行車使用特性報告的一些資料可以大致掌握
+          Ubike 騎乘者的輪廓：
+        </p>
+        <div class="borderlist">
+          <h3>一、「非常態使用者」居多</h3>
+          <p>
+            80.5% 的使用者一個月內租借次數少於 5 次，其中 43.7%
+            的使用者一個月內只租借 1 次，以非常態使用居多。
+          </p>
+        </div>
+        <div class="borderlist">
+          <h3>二、平日通勤、假日休閒</h3>
+          <p>
+            平日租借以早晚通勤時間為主，熱門站點主要在捷運站與學校、商圈之間；<br />
+            假日則以下午時段為主，租借時間普遍較長，且多為同站借還，熱門站點多靠近河濱公園、學校附近，可推斷為休閒目的使用。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg center">
+      <h2>那麼是哪些人會使用 Ubike 呢？</h2>
+    </div>
+    <div class="container-lg text">
+      <div class="title">
+        <h2 style="color: #fff;">使用者分析</h2>
+      </div>
+      <div class="content">
+        <p>
+          首先會員相關功能是只有官方有提供的服務，因此是騎乘者會使用 App
+          的一大原因，不過這次 redesign 會先把重點放在站點資訊。
+          <br /><br />
+          站點資訊部分依當下情境分為兩種需求：
+        </p>
+        <div class="borderlist blue">
+          <h3 style="color: #fff;">
+            一、不知道要去哪個站點的人需要知道哪裡有站點
+          </h3>
+        </div>
+        <p>
+          可以合理猜測非常態使用者中有部分情境是屬於臨時起意，例如等不到公車而決定騎乘
+          Ubike，這時對於不知道哪裡有站點的人來說，站點地理位置的資訊就是一個迫切的需求。
+        </p>
+        <div class="borderlist blue">
+          <h3 style="color: #fff;">二、知道要去哪個站點的人需要知道數量</h3>
+        </div>
+        <p>
+          不管是常態或非常態、通勤或是休閒，只要目標站點很明確，那麼就可能產生這個需求，尤其是熱門站點的使用者。這當中有使用
+          App
+          的人或許是這麼想的：「我不想白跑一趟，到了現場才發現沒有空位或車子。」
+        </p>
+        <div class="borderlist hint">
+          <h4>
+            借不到車怎麼辦？
+          </h4>
+          <p>
+            根據調查結果，租借過程中民眾最不滿意的情況第一名為借不到車，目前官方的解決辦法為加強車輛的調度，雖然理想的狀況是
+            App 能夠幫助 Ubike
+            租借過程更加順利，但不難想像在一些熱門站點可能會很常遇到「剛剛看明明還有車
+            / 空位」的情況，因此這次 redesign
+            也希望透過設計讓使用者更能掌握站點狀況、加強控制感，減緩租借過程中的負面情緒。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg text">
+      <h2>產品分析</h2>
+      <div class="content">
+        <h3>一、資訊傳達不清</h3>
+        <p>
+          首先在地圖模式中可以看到很多笑臉，不同顏色代表不同意義：
+        </p>
+        <img class="img" src="img/ubike_product_analysis1.png" />
+        <p>
+          但顏色和資訊間並沒有相對應的關係，在這邊顏色給人感覺有程度上的差異但事實上並不是。對使用者來說不只增加了判斷的時間，甚至可能被混淆，而這麼重要的資訊只用「顏色」來傳達對色盲或色弱使用者也不夠友善。
+        </p>
+        <br />
+        <p>
+          接著在點擊笑臉後會出現如下圖的站點資訊，但視窗出現的 icon
+          和按鈕意義不夠明確，另外資訊內容的視覺層級也有改善的空間。
+        </p>
+        <img class="img" src="img/ubike_product_analysis2.png" />
+
+        <div class="margin"></div>
+        <h3>二、地圖顯示範圍過大</h3>
+        <p>
+          同樣是上圖的地圖模式，看得出來原設計的地圖顯示範圍是非常大的，但一來地圖上滿滿的笑臉不美觀，二來也難點擊，最後，使用者使用地圖時需要的多半是自身或是目的地「附近」的資訊，並不需要這麼大的範圍。
+          那麼要取多大範圍呢？ 以方圓 500 公尺為基準，大概可以顯示附近 3-7
+          個站點，或許是個不錯的選擇。
+        </p>
+        <div class="margin"></div>
+        <h3>三、導覽模式 - 列表或地圖？</h3>
+        <img class="img" src="img/ubike_product_analysis3.png" />
+        <p>
+          原設計是以 drawer
+          導覽，作為有一個主打功能的產品看起來合理，但就如前面提到的，事實上會員相關功能也是使用者使用產品的原因之一，把它放在
+          drawer 裡或許會有可視性不高的疑慮。
+          另外原設計主頁預設是地圖模式，但從使用者與產品的互動來看，需要列表資訊的使用者需求相對簡單，看一眼就能完成的任務讓他們每次都需要多點擊一次似乎不太合理。
+        </p>
+        <div class="margin"></div>
+        <h3>四、其他</h3>
+        <p>
+          其他較小的細節包括「輸入地名、街道等關鍵字也能得到結果， Placeholder
+          應該修改文案」、「小數點較不容易判斷， 一公里內可以改以公尺顯示」等等
+        </p>
+        <img class="img" src="img/ubike_product_analysis4.png" />
+      </div>
+    </div>
+    <div class="container-lg text">
+      <div class="title">
+        <h2>設計產出</h2>
+      </div>
+      <div class="content">
+        <img class="img" src="img/ubike_output1.png" />
+        <h3>一、優化資訊傳達</h3>
+        <p>
+          首先在色彩的使用上運用了原本品牌色中的三個顏色，但為了增加資訊的易讀性，在淺色和深色模式都各自做了調整加強對比度，而在這裡顏色扮演的是輔助的角色，並不會讓顏色成為傳達資訊的唯一方法。
+        </p>
+        <img class="img" src="img/ubike_color.png " />
+        <div class="margin"></div>
+        <p>
+          接著在列表模式的卡片上放大了車輛及空位的數量、以顏色輔助傳達訊息；地圖模式則透過字級及顏色優化了資訊層級，也在按鈕加上了文字，避免使用者困惑。
+        </p>
+        <img class="img" src="img/ubike_output2.png " />
+        <div class="margin"></div>
+        <p>
+          另外在地圖模式的站點改成以直接顯示數量取代笑臉，並且提供借還車的切換按鈕，降低不必要的資訊干擾，地圖也縮小到能顯示周圍大概
+          3-7 個站點的範圍。
+        </p>
+        <img class="img" src="img/ubike_output3.png " />
+        <div class="margin"></div>
+        <h3>二、調整資訊架構及預設模式</h3>
+        <p>
+          根據使用者分析及產品分析的結論，改以 tab bar
+          作為第一層導覽的方式，增加會員功能的可視性，並且以列表模式作為預設模式。
+        </p>
+        <img class="img" src="img/ubike_output4.png " />
+        <div class="margin"></div>
+        <h3>三、減緩租借過程負面情緒</h3>
+        <p>
+          如同前面提到的，「借不到車」是 Ubike
+          使用調查結果中最不滿意的第一名，因此這次設計選擇在站點資訊的卡片上加上熱門站點的平均等候時間；另外在列表及地圖模式都加上最新的更新時間及重新整理的按鈕，幫助使用者更加掌握情況、加強對於產品使用及租借過程的控制感。
+        </p>
+        <img class="img" src="img/ubike_output5.png " />
+      </div>
+    </div>
+    <div class="container-lg center">
+      <h3>—— 🎉 耶！已經看完這個作品囉 🎉 ——</h3>
+    </div>
+    <div class="container-lg">
+      <div class="section-work">
+        <div class="wrapper">
+          <div class="work nf">
+            <a href="nf.html" style="display: block; height: 100%;"></a>
+          </div>
+        </div>
+        <div class="project-title">
+          <h2>101 financial.app</h2>
+          <h2>打造新手友善的交易平台！</h2>
+        </div>
+        <div class="labels">
+          <span class="label">UI Design</span>
+          <span class="label">App</span>
+          <span class="label">Web</span>
+          <span class="label">Fintech</span>
+        </div>
+      </div>
+      <div class="section-work">
+        <div class="wrapper">
+          <div class="work job">
+            <a href="job.html" style="display: block; height: 100%;"></a>
+          </div>
+        </div>
+        <div class="project-title">
+          <h2>104 App Redesign</h2>
+          <h2>讓求職更便利</h2>
+        </div>
+        <div class="labels">
+          <span class="label">UI Design</span>
+          <span class="label">App</span>
+          <span class="label">Redesign</span>
+          <span class="label">競品分析</span>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg center">
+      <a href="index.html">回首頁</a>
+    </div>
+
+    <div class="container-lg footer">
+      <h5>© Eric Lin 2021</h5>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

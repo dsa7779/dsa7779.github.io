@@ -56,7 +56,7 @@
       <div class="wrapper">
         <div class="project-cover-3"></div>
       </div>
-      <h1>104 App Redesign</h1>
+      <h1 style="margin-top: 16px;">104 App Redesign</h1>
     </div>
     <div class="container-lg project">
       <div class="overview">
@@ -80,131 +80,147 @@
       </div>
       <div class="content">
         <p>
-          Ubike App
-          結合實體站點提供了「站點資訊」、「會員中心」等服務，期望讓民眾更舒適享受騎乘
-          Ubike 的流程及樂趣。<br />
-
-          不過實際上在 App 的體驗存在一些能夠改善的空間，這次 redesign
-          希望可以透過使用者分析和產品分析發現問題，針對站點頁面做出優化設計。
+          104 長年坐穩台灣求職平台龍頭，因應使用設備趨勢也在手機推出 App
+          提供服務。作為使用者之一，
+          這次專案希望可以從用戶體驗要素中的框架層及表現層切入，
+          針對產品的「篩選及履歷編輯功能」進行競品分析並做出優化設計。
         </p>
-        <img class="img" src="img/ubike_background.png " />
+        <img class="img" src="img/marcel-friedrich-XC_28Kk25F0-unsplash.jpg " />
         <div class="img-description">
-          Youbike 官方網站截圖
+          Photo by
+          <a
+            href="https://unsplash.com/@screenwork_ch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Marcel Friedrich</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/cat-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
         </div>
       </div>
     </div>
     <div class="container-lg text">
       <div class="title">
-        <h2>使用者分析</h2>
+        <h2>決定競品</h2>
       </div>
       <div class="content">
         <p>
-          首先根據台北市政府 106 年公共自行車使用特性報告的一些資料可以大致掌握
-          Ubike 騎乘者的輪廓：
+          104 的競品廣義來說除了傳統的數字銀行還包括了 LinkedIn、
+          yourator、CakeResume
+          等等新型態的求職平台，但因為彼此的目標客群和產品功能並沒有那麼相似，其中一些平台也還沒有移動端的產品，因此這次決定仍然先以其他三家數字銀行做為主要的競品對象。
         </p>
-        <div class="borderlist">
-          <h3>一、「非常態使用者」居多</h3>
-          <p>
-            80.5% 的使用者一個月內租借次數少於 5 次，其中 43.7%
-            的使用者一個月內只租借 1 次，以非常態使用居多。
-          </p>
-        </div>
-        <div class="borderlist">
-          <h3>二、平日通勤、假日休閒</h3>
-          <p>
-            平日租借以早晚通勤時間為主，熱門站點主要在捷運站與學校、商圈之間；<br />
-            假日則以下午時段為主，租借時間普遍較長，且多為同站借還，熱門站點多靠近河濱公園、學校附近，可推斷為休閒目的使用。
-          </p>
-        </div>
       </div>
-    </div>
-    <div class="container-lg center">
-      <h2>那麼是哪些人會使用 Ubike 呢？</h2>
     </div>
     <div class="container-lg text">
       <div class="title">
-        <h2 style="color: #fff;">使用者分析</h2>
+        <h2>框架層</h2>
       </div>
       <div class="content">
+        <h3>一、搜尋篩選</h3>
         <p>
-          首先會員相關功能是只有官方有提供的服務，因此是騎乘者會使用 App
-          的一大原因，不過這次 redesign 會先把重點放在站點資訊。
-          <br /><br />
-          站點資訊部分依當下情境分為兩種需求：
+          在這個部分我設定了一項簡單的任務 ——
+          在搜尋中篩選「台北市」及「新北市」，找來一位朋友觀察他的操作，以下是不同產品的操作流程及分析：
         </p>
-        <div class="borderlist blue">
-          <h3 style="color: #fff;">
-            一、不知道要去哪個站點的人需要知道哪裡有站點
-          </h3>
-        </div>
+        <div class="labels left"><span class="label orange">104</span></div>
+        <img class="img" src="img/104_research1.png" />
+        <h3 style="color: #fd8e00;">操作過程缺乏適當提示</h3>
         <p>
-          可以合理猜測非常態使用者中有部分情境是屬於臨時起意，例如等不到公車而決定騎乘
-          Ubike，這時對於不知道哪裡有站點的人來說，站點地理位置的資訊就是一個迫切的需求。
+          使用者在選擇完台北市後很明顯花了較多時間思考下一步，最後選擇了點擊「完成」按鈕。<br /><br />
+
+          但事實上目前的設計想要回到縣市選擇頁必須點擊返回鍵，使用者會感到困惑的原因出在返回鍵更多時候代表的是「取消」、「上一步」，因此很難跟「繼續篩選」的動作做聯想。
         </p>
-        <div class="borderlist blue">
-          <h3 style="color: #fff;">二、知道要去哪個站點的人需要知道數量</h3>
-        </div>
+        <div class="margin"></div>
+        <div class="labels left"><span class="label blue">1111</span></div>
+        <img class="img" src="img/104_research2.png" />
+        <h3 style="color: #58c0c0;">使用 popup 視窗加強資訊階層關係</h3>
         <p>
-          不管是常態或非常態、通勤或是休閒，只要目標站點很明確，那麼就可能產生這個需求，尤其是熱門站點的使用者。這當中有使用
-          App
-          的人或許是這麼想的：「我不想白跑一趟，到了現場才發現沒有空位或車子。」
+          使用者在操作 1111 時並沒有遇上太大的問題，在設計上 1111
+          在選擇「區」的步驟透過螢幕 2/3 範圍的 popup
+          視窗與前一個頁面做出主次關係，跟 104 相比能夠讓使用者
+          更清楚點擊按鈕後將發生什麼事。
         </p>
-        <div class="borderlist hint">
-          <h4>
-            借不到車怎麼辦？
-          </h4>
-          <p>
-            根據調查結果，租借過程中民眾最不滿意的情況第一名為借不到車，目前官方的解決辦法為加強車輛的調度，雖然理想的狀況是
-            App 能夠幫助 Ubike
-            租借過程更加順利，但不難想像在一些熱門站點可能會很常遇到「剛剛看明明還有車
-            / 空位」的情況，因此這次 redesign
-            也希望透過設計讓使用者更能掌握站點狀況、加強控制感，減緩租借過程中的負面情緒。
-          </p>
-        </div>
+        <div class="margin"></div>
+        <div class="labels left"><span class="label red">518</span></div>
+        <img class="img" src="img/104_research3.png" />
+        <h3 style="color: #ff6446;">透過單一頁面區分資訊階層關係</h3>
+        <p>
+          518 和 yes123
+          在這個設定的任務中表現的最出色，兩者頁面上的設計不只資訊間階層明確，讓使用者能夠一目了然，同時也只需要透過最少的點擊次數和經過頁面就能完成任務。
+        </p>
+        <div class="margin"></div>
+        <h3 style="color: #ff6446;">缺乏錯誤操作考量</h3>
+        <p>
+          但不管是 104 還是 518 都有個可以改善的地方：<br />
+          左下角的「清除重選」在產品中代表的是清除「全部」條件，若是不清楚的使用者點擊了可能會造成毀滅性的後果，解決的辦法有幾個：<br />
+          1. 更明確定義按鈕意義<br />
+          2. 提供確認視窗<br />
+          3. 提供復原操作<br />
+          前兩者預防錯誤發生，後者則把錯誤的傷害降到最低。
+        </p>
+        <div class="margin"></div>
+        <h3>二、履歷編輯</h3>
+        <p>
+          首先我想分析在一份新的履歷中，其中的架構及導覽是如何引導使用者完成一份履歷。
+        </p>
+        <img class="img" src="img/104_research4.png " />
+        <h3>進度條 —— 幫助辨認；目錄 —— 加快操作</h3>
+        <p>
+          可以發現 104 和 yes123
+          較特別的地方是都會先條列出目錄，讓使用者可以一覽接下來需要完成的任務大概有哪些，差別在於
+          104 多出了進度條。<br /><br />
+          事實上詢問了兩位使用者後，也發現編輯履歷確實很多時候不是一次就可以完成的任務，使用者極有可能在過程中途離開，這時進度條可以幫助使用者辨認而不是記憶上次完成的進度，而能夠一眼看清楚的目錄則能夠幫助使用者快速進入該區塊進行編輯，因此我認為就架構來說
+          104
+          的設計是個不錯的選擇，不過相較「刪除」，把「預覽」作為這個頁面主要的
+          CTA 按鈕可能會是更好的選擇。
+        </p>
+        <br /><br />
+        <p>
+          接著我想從細節上分析實際編輯履歷時的設計及互動方式。<br />首先 104
+          欄位互動的方式可以大概分成兩種：輸入和選項。
+        </p>
+        <div class="margin"></div>
+        <!-- <div class="labels left"><span class="label orange">104</span></div> -->
+
+        <h3 style="color: #fd8e00;">輸入 —— 缺少限制及錯誤訊息設計</h3>
+        <p>
+          輸入的部分大致上沒有問題，但就預防錯誤及回饋而言似乎缺少了點考量，比如說有固定格式的手機號碼欄位在這裡並沒有提供限制，使用者輸入錯誤的格式後系統也不會提供回饋。
+        </p>
+        <img class="img" src="img/104_research5.png" />
+        <div class="margin"></div>
+        <h3 style="color: #fd8e00;">選項、標籤設計 —— 使用者視線移動不順暢</h3>
+        <p>
+          除了以 picker
+          互動的時間類欄位外，其他選項目前的設計是使用由右至左移入的 modal
+          view，但有一個問題是對於一些選項較少的欄位來說使用者的視線會需要較大幅度的移動。<br /><br />
+
+          另外目前的設計是把標籤（label）放在欄位的左側，但根據研究顯示，把標籤放在欄位的左上側能夠讓視線的移動更順暢，優化表單的完成時間。
+        </p>
+        <img class="img" src="img/104_research6.png" />
+        <div class="margin"></div>
+        <p>
+          1111 和 518 與 104
+          最大的差別在於單選及複選都是使用彈出視窗與使用者互動，缺點是目前的設計缺乏合適的動畫，所以視覺上侵入性較強，好處是進行操作時不用離開目前的視窗，且像
+          1111 那樣把視窗置於底部的話會更便於單手操作。<br /><br />
+          yes123
+          則是一些選項較少的欄位會直接顯示選項，這種設計解決了過少的選項會導致使用者視線大幅移動的缺點，是可以參考的方向。
+        </p>
+        <img class="img" src="img/104_research7.png" />
       </div>
     </div>
 
     <div class="container-lg text">
-      <h2>產品分析</h2>
+      <h2>表現層</h2>
       <div class="content">
-        <h3>一、資訊傳達不清</h3>
+        <img class="img" src="img/104_research8.png" />
+        <h3>色彩使用、元件樣式不一致</h3>
         <p>
-          首先在地圖模式中可以看到很多笑臉，不同顏色代表不同意義：
+          從一些截圖來看，可以發現首先在顏色使用上大致就是白色、黑色及灰色，品牌色用來強調前饋及回饋，但在灰色的使用上
+          104 和 yes123 顯得較為混亂。<br /><br />
+          而在資訊的分隔和群組上，104 和 yes123 較常使用線條，而 1111 和 518
+          更多是透過顏色，這些原因加上 icon 、欄位及按鈕的樣式讓 104 和 yes123
+          目前的設計顯得較老，因此這次設計在視覺上希望可以達成讓品牌年輕化的目標，同時也制定出一致的設計規範。
         </p>
-        <img class="img" src="img/ubike_product_analysis1.png" />
-        <p>
-          但顏色和資訊間並沒有相對應的關係，在這邊顏色給人感覺有程度上的差異但事實上並不是。對使用者來說不只增加了判斷的時間，甚至可能被混淆，而這麼重要的資訊只用「顏色」來傳達對色盲或色弱使用者也不夠友善。
-        </p>
-        <br />
-        <p>
-          接著在點擊笑臉後會出現如下圖的站點資訊，但視窗出現的 icon
-          和按鈕意義不夠明確，另外資訊內容的視覺層級也有改善的空間。
-        </p>
-        <img class="img" src="img/ubike_product_analysis2.png" />
-
-        <div class="margin"></div>
-        <h3>二、地圖顯示範圍過大</h3>
-        <p>
-          同樣是上圖的地圖模式，看得出來原設計的地圖顯示範圍是非常大的，但一來地圖上滿滿的笑臉不美觀，二來也難點擊，最後，使用者使用地圖時需要的多半是自身或是目的地「附近」的資訊，並不需要這麼大的範圍。
-          那麼要取多大範圍呢？ 以方圓 500 公尺為基準，大概可以顯示附近 3-7
-          個站點，或許是個不錯的選擇。
-        </p>
-        <div class="margin"></div>
-        <h3>三、導覽模式 - 列表或地圖？</h3>
-        <img class="img" src="img/ubike_product_analysis3.png" />
-        <p>
-          原設計是以 drawer
-          導覽，作為有一個主打功能的產品看起來合理，但就如前面提到的，事實上會員相關功能也是使用者使用產品的原因之一，把它放在
-          drawer 裡或許會有可視性不高的疑慮。
-          另外原設計主頁預設是地圖模式，但從使用者與產品的互動來看，需要列表資訊的使用者需求相對簡單，看一眼就能完成的任務讓他們每次都需要多點擊一次似乎不太合理。
-        </p>
-        <div class="margin"></div>
-        <h3>四、其他</h3>
-        <p>
-          其他較小的細節包括「輸入地名、街道等關鍵字也能得到結果， Placeholder
-          應該修改文案」、「小數點較不容易判斷， 一公里內可以改以公尺顯示」等等
-        </p>
-        <img class="img" src="img/ubike_product_analysis4.png" />
       </div>
     </div>
     <div class="container-lg text">
@@ -212,13 +228,36 @@
         <h2>設計產出</h2>
       </div>
       <div class="content">
-        <h3>一、色彩計畫</h3>
+        <h3>一、履歷主頁</h3>
         <p>
-          首先在色彩的使用上運用了原本品牌色中的三個顏色，但為了增加資訊的易讀性，在淺色和深色模式都各自做了調整加強對比度，而在這裡顏色扮演的是輔助的角色，並不會讓顏色成為傳達資訊的唯一方法。
+          在履歷主頁的部分，根據前面的結論保留了目錄及進度設計，幫助使用者記憶編輯進度，另外重新繪製了視覺一致的
+          icon。
         </p>
-        <img class="img" src="img/ubike_color.png " />
+        <img class="img" src="img/104_output1.png " />
         <div class="margin"></div>
-        <h3>二、頁面展示</h3>
+        <h3>二、履歷表單</h3>
+        <p>
+          在履歷表單的部分，選項較少的欄位調整成直接顯示選項，改善視線移動問題。
+        </p>
+        <img class="img" src="img/104_output2.png " />
+        <div class="margin"></div>
+        <p>
+          選項較多的欄位則統一使用 modal view， 加強頁面層級關係，同時改善 popup
+          視窗侵入性過強的問題。
+        </p>
+        <img class="img" src="img/104_output3.png " />
+        <div class="margin"></div>
+        <p>
+          輸入欄位的部分則定義好元件的不同狀態，在特定欄位提供格式限制，預防錯誤發生。
+        </p>
+        <img class="img" src="img/104_output4.png " />
+        <div class="margin"></div>
+        <h3>三、搜尋篩選</h3>
+        <p>
+          在搜尋篩選的部分參考了 518
+          的設計，在同個畫面同時呈現不同層級的分類，減少使用者操作所需經過的頁面及點擊次數。在具有破壞性操作的按鈕上則更明確描述動作，同時也提供確認視窗及復原操作，防止並彌補錯誤發生。
+        </p>
+        <img class="img" src="img/104_output5.png " />
       </div>
     </div>
     <div class="container-lg center">

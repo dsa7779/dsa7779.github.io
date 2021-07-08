@@ -125,6 +125,13 @@ a:hover {
 .container-lg.center {
   text-align: center;
 }
+.container-lg.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
 .content {
   margin-top: 8px;
   margin-left: 64px;
@@ -181,12 +188,32 @@ a:hover {
 .labels {
   text-align: end;
 }
+.labels.left {
+  text-align: start;
+  margin-top: 8px;
+}
 .label {
   padding: 2px 12px;
   border-radius: 8px;
   margin-left: 8px;
   background-color: #f3f3f3;
   color: #777;
+}
+.labels.left .label {
+  margin-left: 0px;
+  color: #ffffff;
+}
+.label.orange {
+  background-color: #fd8e00;
+}
+.label.blue {
+  background-color: #58c0c0;
+}
+.label.red {
+  background-color: #ff6446;
+}
+.label.pink {
+  background-color: #e41b82;
 }
 
 /* .mask {
@@ -239,7 +266,6 @@ a:hover {
   border: none;
   border-radius: 12px;
   padding: 12px 24px;
-  margin-top: 16px;
   margin-bottom: 4px;
   background-color: #31aac9;
 }
@@ -249,17 +275,7 @@ a:hover {
   border-left: none;
   border-right: none;
   border-radius: 0px;
-  padding: 12px 24px 16px;
-  margin-top: 16px;
   background-color: #fffaee;
-}
-
-/* footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0 20px;
 }
 
 /* img */

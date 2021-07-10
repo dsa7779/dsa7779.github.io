@@ -119,6 +119,9 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+.container-lg.cover.noreverse {
+  padding: 150px 16px 80px;
+}
 .container-lg.text {
   display: flex;
 }
@@ -278,15 +281,67 @@ a:hover {
   background-color: #fffaee;
 }
 
+/* about */
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+.borderlist.skilltool {
+  width: 100%;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.tools {
+  display: flex;
+}
+.tool {
+  display: block;
+  text-align: center;
+  margin-right: 16px;
+}
+/* about */
+.ex-title {
+  display: flex;
+  align-items: center;
+}
+.ex {
+  display: flex;
+  flex-direction: column;
+}
+.label-lg {
+  padding: 4px 16px;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+  color: #555;
+}
+.companyname {
+  color: #777777;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 0px 16px;
+  border-right: #777 solid 0.5px;
+}
+
 /* img */
 .img-me {
   width: 30%;
+  min-width: 300px;
+}
+.img-about {
+  width: 50%;
   min-width: 300px;
 }
 .img {
   width: 100%;
   border-radius: 12px;
   margin-top: 16px;
+}
+.tool-logo {
+  width: 60px;
+  height: 60px;
 }
 
 /* btn */
@@ -374,6 +429,9 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 40px;
   }
+  .container-lg.cover.noreverse {
+    flex-direction: column;
+  }
   .container-lg.project {
     padding-bottom: 20px;
   }
@@ -391,6 +449,10 @@ a:hover {
   .wrapper {
     height: 200px;
   }
+  .footer {
+    flex-direction: column;
+  }
+
   /* work */
   .project-title {
     flex-direction: column;
@@ -413,9 +475,28 @@ a:hover {
   .overview-item {
     display: flex;
   }
+  /* about*/
+  .skill {
+    display: block;
+  }
+  .borderlist.skill {
+    margin-right: 0px;
+  }
+  .ex-title {
+    display: block;
+  }
+  .companyname {
+    padding: 0px;
+  }
+
   /* img */
   .img-me {
     width: 70%;
+    min-width: 100px;
+    max-width: 400px;
+  }
+  .img-about {
+    width: 100%;
     min-width: 100px;
     max-width: 400px;
   }
@@ -428,5 +509,9 @@ a:hover {
   .btn.secondary {
     margin-left: 0px;
     margin-top: 16px;
+  }
+  /* footer */
+  .e-mail {
+    margin-bottom: 16px;
   }
 }

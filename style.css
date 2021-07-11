@@ -365,7 +365,6 @@ a:hover {
   background-color: #fff;
   border-color: #309aeb;
   color: #309aeb;
-  margin-left: 16px;
 }
 @media (max-width: 991.98px) {
   .container-lg,
@@ -431,6 +430,7 @@ a:hover {
   }
   .container-lg.cover.noreverse {
     flex-direction: column;
+    padding-top: 80px;
   }
   .container-lg.project {
     padding-bottom: 20px;
@@ -505,10 +505,6 @@ a:hover {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-  }
-  .btn.secondary {
-    margin-left: 0px;
-    margin-top: 16px;
   }
   /* footer */
   .e-mail {

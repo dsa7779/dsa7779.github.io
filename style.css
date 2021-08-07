@@ -1,6 +1,7 @@
 /* font */
 body {
   font-family: 'Noto Sans TC', 'PingFang TC', sans-serif;
+  scroll-behavior: smooth;
 }
 p {
   color: #555;
@@ -372,7 +373,6 @@ a:hover {
   margin-left: 16px;
 }
 .btn.secondary:hover {
-  background-color: #fff;
   border-color: #2086d4;
   color: #2086d4;
 }

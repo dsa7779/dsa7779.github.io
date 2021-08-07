@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -57,8 +58,12 @@
 
     <!---簡介-->
     <div class="container-lg cover noreverse">
-      <img class="img-about" src="img/about_img (3).png" />
-      <div class="CTA ">
+      <img
+        class="img-about"
+        src="img/about_img (3).png"
+        data-aos="fade-right"
+      />
+      <div class="CTA" data-aos="fade-left" data-aos-delay="200">
         <h2>
           —— 好廣告讓爛產品死得更快
         </h2>
@@ -192,5 +197,12 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      })
+      AOS.init({ disable: 'mobile' })
+    </script>
   </body>
 </html>

@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -50,8 +51,8 @@
     </nav>
 
     <!---簡介-->
-    <div class="container-lg cover">
-      <div class="CTA">
+    <div class="container-lg cover" style="padding-bottom: 50px;">
+      <div class="CTA" data-aos="fade-right">
         <h1>
           嗨！我是 Eric：）
         </h1>
@@ -68,7 +69,12 @@
           </a>
         </div>
       </div>
-      <img class="img-me" src="img/me.png" />
+      <img
+        class="img-me"
+        src="img/me.png"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      />
     </div>
 
     <!---作品-->
@@ -148,5 +154,12 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      })
+      AOS.init({ disable: 'mobile' })
+    </script>
   </body>
 </html>

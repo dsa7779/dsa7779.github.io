@@ -361,10 +361,20 @@ a:hover {
   border-color: #309aeb;
   color: #fff;
 }
+.btn.primary:hover {
+  background-color: #2086d4;
+  border-color: #2086d4;
+}
 .btn.secondary {
   background-color: #fff;
   border-color: #309aeb;
   color: #309aeb;
+  margin-left: 16px;
+}
+.btn.secondary:hover {
+  background-color: #fff;
+  border-color: #2086d4;
+  color: #2086d4;
 }
 @media (max-width: 991.98px) {
   .container-lg,
@@ -505,6 +515,10 @@ a:hover {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
+  }
+  .btn.secondary {
+    margin-left: 0px;
+    margin-top: 16px;
   }
   /* footer */
   .e-mail {

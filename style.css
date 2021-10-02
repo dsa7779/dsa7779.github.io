@@ -20,6 +20,7 @@ h1 {
   font-weight: 700;
 }
 h2 {
+  font-family: 'Futura', 'Noto Sans TC', 'PingFang TC', sans-serif;
   color: #333;
   font-size: 24px;
   letter-spacing: 0.6px;
@@ -134,7 +135,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .content {
   margin-top: 8px;

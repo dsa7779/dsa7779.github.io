@@ -377,6 +377,38 @@ a:hover {
   border-color: #2086d4;
   color: #2086d4;
 }
+
+/* anchor */
+.anchor{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 16px 16px 8px 16px;
+  /* box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1); */
+}
+.anchor .text{
+  padding-bottom: 8px;
+  text-decoration: none;
+
+}
+/* .target-fix {
+  position: relative;
+  top: -50px;
+  display: block;
+  visibility: hidden;
+} */
+
+
+@media (max-width: 1200px) {
+  .anchor{
+    display: none;
+  }
+}
+
 @media (max-width: 991.98px) {
   .container-lg,
   .container-lg.cover,

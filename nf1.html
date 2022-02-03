@@ -53,7 +53,7 @@
     <div class="overview">
       <div class="overview-item">
         <div class="title-s">專案時長</div>
-        <p>2021.1-6（半年）</p>
+        <p>2021.1-現在</p>
       </div>
       <div class="overview-item">
         <div class="title-s">團隊角色</div>
@@ -61,13 +61,11 @@
       </div>
       <div class="overview-item">
         <div class="title-s">負責項目</div>
-        <p>前台設計規範 / 完稿、功能流程規劃、Design QA</p>
+        <p>Design System 建立及維護、流程規劃、Mockup 產出、Design QA</p>
       </div>
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="background"></div>
-
     <div class="title">
       <h2>專案背景</h2>
     </div>
@@ -89,14 +87,24 @@
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="challenge"></div>
-
     <div class="title">
-      <h2>目標與挑戰</h2>
+      <h2>問題發現</h2>
     </div>
     <div class="content">
       <p>
-        這個專案最大的目標和挑戰有兩個：
+        在專案開發中後期，我們得到了一些來自身邊朋友和客戶的回饋，其中最多人反應認為平台的註冊流程太長，另一個較特別的則是有人認為無法信任我們的平台，無論哪個都是影響使用者願不願意使用我們平台的關鍵問題，因此團隊決定針對產品進行優化。
+      </p>
+
+      <img class="img" src="img/nf1_1.png" />
+
+    </div>
+
+  </div>
+  <div class="container-lg text">
+    <h2>決定目標</h2>
+    <div class="content">
+      <p>
+        目前市場上並非沒有類似的產品，對使用者來說我們是全新又陌生的平台，而從商業層面來看「開戶數」又是投資平台非常重要的指標，如何在與使用者的第一次接觸營造良好的印象會是很重要的事情，結合前面提到的問題，我們認為可以從產品的「前期體驗」下手。
       </p>
       <div class="borderlist">
         <h3>一、為投資新手做設計</h3>
@@ -123,11 +131,7 @@
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="insight"></div>
-
-    <div class="title">
-      <h2>使用者洞察</h2>
-    </div>
+    <h2>使用者洞察</h2>
     <div class="content">
       <p>
         在這個專案中我最主要是透過競品分析、從視覺及互動層面切入分析輔助設計決策，但有很多關於使用者的洞察是從和團隊成員討論和聊天的過程中得到的。<br /><br />
@@ -182,11 +186,7 @@
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="goal"></div>
-
-    <div class="title">
-      <h2>設計目標</h2>
-    </div>
+    <h2>設計目標</h2>
     <div class="content">
       <p>
         回到我們產品本身，這次的設計希望可以達到幾個較具體的目標：
@@ -197,18 +197,14 @@
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="output"></div>
-
-    <div class="title">
-      <h2>設計產出</h2>
-    </div>
+    <h2>設計產出</h2>
     <div class="content">
       <h3>一、降低資訊密度 - 增加留白、間距空間</h3>
       <p>
         首先由於這個專案主要是由老闆及 PM
         決定需要放上產品的資訊，所以在降低資訊密度的部分，我的第一個做法是透過視覺增加產品留白及間距。以報價頁為例，在同樣螢幕尺寸下，我們（右圖）增加了不少報價欄位的高度。
       </p>
-      <img class="img" src="img/nf_output1.png" />
+      <img class="img" src="img/nf_output1.001.png" />
       <div class="margin"></div>
       <p>
         事實上這個設計當初跟老闆來回討論了一段時間，他認為使用者能在第一眼看到越多報價就越能加快判斷，繼續深入討論後發現他是以「資深、專業交易員」的角度看待這件事情，但對新手來說，第一屏過多的資訊可能反而會造成無形的壓力。
@@ -216,34 +212,46 @@
       <img class="img" src="img/nf_insight2.png" />
 
       <div class="margin"></div>
-      <h3>一、降低資訊密度 - 調整資訊架構</h3>
+      <h3>一、降低資訊密度 - 隱藏進階選項</h3>
       <p>
-        接著我們在資訊架構上做了一些調整 ——
-        原本的設計在交易頁包含了「下單」及「部位」兩個區塊，會有這個設計是因為有位團隊成員提到，如果在下單後使用者能夠馬上看到持倉的預期盈虧，那就能更方便判斷下一步的動作。
+        接著在交易頁我們在設計上做了一個調整 ——
+        隱藏了下單的進階選項。如下圖，其中條件跟倉別是系統預設的選項，一樣是屬於較資深的使用者才會用到的功能，我們選擇預設把他隱藏起來，讓使用者能夠更專注在需要填寫的欄位。
       </p>
       <img class="img" src="img/nf_output2.png" />
       <div class="margin"></div>
       <p>
-        原本結合兩個區塊的做法是在保留底部 tab bar 的情況下使用類似 modal
-        view 的視窗，但實作後發現網頁移動端在操作的體驗上並不是那麼順暢，另外因為手機空間有限，在資訊的呈現上明顯變得太過複雜，於是最後決定把「部位」獨立出來（如下圖），幫助使用者能夠更專注在當前的任務。
+        另一方面，這個決定也間接影響到了另一個設計 ——
+        我們在交易頁的下半部加入了持倉及預期盈虧的資訊。<br />
+        會有這個設計是因為在討論過程中有位團隊成員提到，如果在下單後使用者能夠馬上看到持倉的預期盈虧，那就能更方便判斷下一步的動作了。雖然這個決定可能會跟「降低資訊密度」的目標有衝突，但團隊認為這或許是個滿不錯的假設。
+      </p>
+      <img class="img" src="img/nf_insight3.png" />
+      <div class="margin"></div>
+      <p>
+        那麼問題就變成如何讓交易頁跟持倉的資訊不要互相干擾？<br />
+        最後我的做法是在保留底部 tab bar 的情況下使用類似 modal view
+        的視窗做出區隔，讓使用者在查看持倉資訊時不會被交易頁干擾，同時也能夠清楚知道關閉當前視窗後就能回到交易頁。
+        雖然是比較不常見的設計模式，但考量到產品的 TA
+        是屬於學習較快、對科技較熟悉的族群，我們覺得這是可以嘗試的方法。
       </p>
       <img class="img" src="img/nf_output3.png" />
       <div class="margin"></div>
       <h3>二、建立視覺規範</h3>
       <p>
-        除了前面提到的間距外，這個專案在初期也針對顏色、字體、等樣式做了完整的規範，在跟老闆來回討論後，確定他想傳達的品牌形象是「簡單、可靠的」，最後考量了形象及易讀性後選定了橘色作為品牌的主色，紅綠色使用了彩度較高的配色，按鈕等元件則使用了中等尺寸的圓角。
+        除了前面提到的間距外，這個專案在初期也針對顏色、字體、陰影等樣式做了完整的規範，其中在顏色規劃的部分，有一個小細節值得注意，Robinhood
+        之所以能使用綠色作為品牌的主色，是因為歐美地區的綠色代表的是「漲」，TA
+        主要為亞洲地區的我們自然不可能用綠色作為主色。
       </p>
       <img class="img" src="img/nf_guideline.png" />
       <div class="img-description">
         部分 UI Style Guide
       </div>
       <div class="margin"></div>
-      <img class="img" src="img/nf_guideline2.png" />
-      <div class="img-description">
-        整體品牌形象及調性
-      </div>
+      <p>
+        在跟老闆來回討論後，確定他想傳達的品牌形象是「簡單、可靠的」，最後考量了形象及易讀性後選定了橘色作為品牌的主色，紅綠色使用了彩度較高的配色，按鈕等元件則使用了中等尺寸的圓角。
+      </p>
+      <img class="img" src="img/style (1).png" />
       <div class="margin"></div>
-      <h3>三、完整註冊前體驗流程 - 空白狀態</h3>
+      <h3>三、完整註冊前體驗流程</h3>
       <p>
         如同前面提到的，對使用者來說我們是完全陌生的產品，在市面上已經有類似產品的情況下我們必須為自己爭取機會，因此團隊決定在產品提供模擬交易的功能，讓使用者可以在註冊前就先一步體驗我們的產品。
       </p>
@@ -262,40 +270,17 @@
         在使用者第一次進入我們的產品時，會有非常多區塊及元件 ——
         包括績效圖、持倉欄位等等，是處於沒有資料的空白狀態。
       </p>
-      <img class="img" src="img/nf_empty1.png" />
+      <img class="img" src="img/empty1.png" />
       <div class="margin"></div>
       <p>
-        為了讓使用者能夠有完整的體驗，我們最後選擇在這些空白狀態的頁面加入簡單的插圖並搭配適當的說明文字，一來不讓使用者困惑功能是否正常，二來明確告訴使用者元件的用途，在部分區塊也能當作註冊會員的誘因。
+        為了讓使用者能夠有完整的體驗，我們最後選擇在這些空白狀態的頁面加入生動的插圖並搭配適當的說明文字，一來不讓使用者困惑功能是否正常，二來明確告訴使用者元件的用途並加強品牌的風格，在部分區塊也能當作註冊會員的誘因。
       </p>
-      <img class="img" src="img/nf_empty2.png" />
-      <div class="margin"></div>
-      <h3>三、完整註冊前體驗流程 - 抽獎活動</h3>
-      <p>
-        最後，如果按照規劃，使用者在我們整個產品前期體驗中的最後一個步驟會是領取專屬的股票抽獎券，但最初的設計由於時間等因素的限制，並沒有在視覺及互動上著墨太多，導致這個理應是使用者情緒最高點的步驟體驗並不是太好，於是我們決定花一些時間在這部分進行調整，希望讓我們的產品不只是好用還很有趣。
-      </p>
-      <img class="img" src="img/nf_activity1.png" />
-      <div class="img-description">
-        使用者旅途及情緒變化
-      </div>
-      <div class="margin"></div>
-
-      <img class="img" src="img/nf_activity2.png" />
-      <div class="img-description">
-        活動頁面 - before
-      </div>
-      <div class="margin"></div>
-      <img class="img" src="img/nf_activity3.png" />
-      <div class="img-description">
-        活動頁面 - after
-      </div>
+      <img class="img" src="img/NF3.001.png" />
+      <img class="img" src="img/NF4.001.png" />
     </div>
   </div>
   <div class="container-lg text">
-    <div class="target-fix" id="reflect"></div>
-
-    <div class="title">
-      <h2>可以更好的地方👨🏻‍🔧</h2>
-    </div>
+    <h2>可以更好的地方👨🏻‍🔧</h2>
     <div class="content">
       <p>
         最後的最後，在專案進入尾聲後，我利用時間整理了幾點下次能夠改進的地方：
@@ -383,26 +368,6 @@
       </p>
     </div>
     <h5 style="margin-bottom: 0px;">© Eric Lin 2022</h5>
-  </div>
-  <div class="anchor">
-    <a class="text" href="#background">
-      專案背景
-    </a>
-    <a class="text" href="#challenge">
-      目標與挑戰
-    </a> <a class="text" href="#insight">
-      使用者洞察
-    </a>
-    <a class="text" href="#goal">
-      設計目標
-    </a>
-    </a>
-    <a class="text" href="#output">
-      設計產出
-    </a>
-    <a class="text" href="#reflect">
-      反思
-    </a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
